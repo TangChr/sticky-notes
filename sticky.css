@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "Reenie Beanie";
+    src: url("fonts/beanie.woff") format('woff');
+}
+
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -56,11 +61,6 @@ ul.sticky-notes li p {
     font-size: 160%;
 }
 
-p.sticky-title {
-    font-size: 160%;
-    text-decoration: underline;
-}
-
 ul.sticky-notes li a {
     -webkit-transform: rotate(-6deg);
     -moz-transform: rotate(-6deg);
@@ -102,4 +102,9 @@ ul.sticky-notes li a:hover, ul.sticky-notes li a:focus {
     -o-transform: scale(1.25);
     position: relative;
     z-index: 5;
+}
+
+ul.sticky-notes li p.title {
+    font-size: 160%;
+    text-decoration: underline;
 }
