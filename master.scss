@@ -2,7 +2,6 @@ body {
     background: #666;
 }
 
-@import "includes/font.scss",
-        "includes/mixins.scss",
+@import "includes/mixins.scss",
         "includes/colors.scss",
         "includes/notes.scss";
