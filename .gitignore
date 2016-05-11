@@ -1,4 +1,7 @@
+# Folders
 .sass-cache/
+dist/
+
 Gemfile.lock
 *.map
 *.css
