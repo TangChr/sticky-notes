@@ -2,6 +2,7 @@
 .sass-cache/
 dist/
 
+# Files
 Gemfile.lock
 *.map
 *.css
