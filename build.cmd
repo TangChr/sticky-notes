@@ -1,2 +1,2 @@
 mkdir "dist"
-cmd /k sass master.scss .\dist\sticky.css --style compressed
+cmd /k sass main.scss .\dist\sticky.css --style compressed

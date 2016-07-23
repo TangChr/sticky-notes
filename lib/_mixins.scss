@@ -1,0 +1,10 @@
+@mixin note-style($rotation, $top, $background) {
+	-o-transform:rotate($rotation);
+	-webkit-transform:rotate($rotation);
+	-moz-transform:rotate($rotation);
+	position:relative;
+	background: $background;
+	@if($top != 0) {
+		top: $top;
+	}
+}
