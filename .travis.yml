@@ -1,6 +1,3 @@
-before_script:
- - chmod +x test/travis.rb
-
 script:
  - "test/travis.rb"
 
