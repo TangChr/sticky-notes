@@ -1,6 +1,14 @@
-script:
- - "test/travis.rb"
+language: node_js
+node_js:
+  - "6"
+  - "6.1"
+  - "5.11"
+  - "iojs"
+  
+branches:
+  only:
+  - master
 
-language: sass
-before_install:
- - gem install sass
+before_script:
+  - npm install -g gulp
+script: gulp

@@ -1,0 +1,7 @@
+body {
+    background: #666;
+}
+
+@import 'src/mixins',
+        'src/colors',
+        'src/notes';

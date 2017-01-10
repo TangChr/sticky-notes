@@ -1,10 +1,3 @@
 # Folders
-.sass-cache/
-dist/
-
-# Files
-Gemfile.lock
-*.map
-*.css
-*.swo
-*.swp
+node_modules
+dist
