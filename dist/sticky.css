@@ -1,0 +1,83 @@
+/**
+ * sticky-notes v1.0.0
+ * Copyright (c) 2017 Christian Tang
+ * Licensed under MIT (https://github.com/TangChr/sticky-notes/blob/master/LICENSE)
+ */
+body {
+  background: #666; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+ul.sticky-notes {
+  overflow: hidden;
+  padding: 1.5em; }
+
+ul.sticky-notes li {
+  list-style: none;
+  margin: 1em;
+  float: left; }
+
+ul.sticky-notes li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  height: 9em;
+  width: 9em;
+  padding: 0.5em;
+  -moz-box-shadow: 5px 5px 7px #212121;
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -moz-transition: -moz-transform .15s linear;
+  -o-transition: -o-transform .15s linear;
+  -webkit-transition: -webkit-transform .15s linear;
+  -o-transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  position: relative;
+  background: #fcaf09; }
+
+ul.sticky-notes li:nth-child(even) a {
+  -o-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  position: relative;
+  background: #c6dd2a;
+  top: 5px; }
+
+ul.sticky-notes li:nth-child(3n) a {
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  position: relative;
+  background: #f8e70c;
+  top: -5px; }
+
+ul.sticky-notes li:nth-child(5n) a {
+  -o-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  background: #55c7f0;
+  top: -10px; }
+
+ul.sticky-notes li:nth-child(7n) a {
+  background: #b788be; }
+
+ul.sticky-notes li a:hover,
+ul.sticky-notes li a:focus {
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 8px px 5px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position: relative;
+  z-index: 5; }
+
+ul.sticky-notes li p {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: normal;
+  font-size: 125%; }
