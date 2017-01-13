@@ -1,10 +1,6 @@
 {
   "name": "sticky-notes",
   "version": "1.0.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TangChr/sticky-notes.git"
-  },
   "license": "Licensed under MIT (https://github.com/TangChr/sticky-notes/blob/master/LICENSE)",
   "author": "Christian Tang",
   "devDependencies": {
