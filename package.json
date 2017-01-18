@@ -1,7 +1,7 @@
 {
   "name": "sticky-notes",
   "version": "1.0.0",
-  "license": "Licensed under MIT (https://github.com/TangChr/sticky-notes/blob/master/LICENSE)",
+  "license": "MIT",
   "author": "Christian Tang",
   "devDependencies": {
     "gulp": "^3.9.1",

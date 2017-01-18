@@ -1,13 +1,13 @@
-var gulp = require('gulp'),
+var gulp   = require('gulp'),
     header = require('gulp-header'),
     rename = require('gulp-rename'),
-    sass = require('gulp-sass');
+    sass   = require('gulp-sass'),
+    pkg = require('./package.json');
 
-var pkg = require('./package.json');
 var banner = ['/**',
   ' * <%= pkg.name %> v<%= pkg.version %>',
   ' * Copyright (c) <%= year  %> <%= pkg.author %>',
-  ' * <%= pkg.license %>',
+  ' * Licensed under <%= pkg.license %> (https://github.com/TangChr/sticky-notes/blob/master/LICENSE)',
   ' */',
   ''].join('\n');
  

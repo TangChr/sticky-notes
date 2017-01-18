@@ -7,77 +7,88 @@ body {
   background: #666; }
 
 * {
+  font-size: 100%;
   margin: 0;
-  padding: 0;
-  font-size: 100%; }
+  padding: 0; }
 
 ul.sticky-notes {
   overflow: hidden;
   padding: 1.5em; }
 
 ul.sticky-notes li {
+  float: left;
   list-style: none;
-  margin: 1em;
-  float: left; }
+  margin: 1em; }
 
 ul.sticky-notes li a {
-  text-decoration: none;
-  color: #000;
-  display: block;
-  height: 9em;
-  width: 9em;
-  padding: 0.5em;
   -moz-box-shadow: 5px 5px 7px #212121;
   -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
-  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -moz-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
   -moz-transition: -moz-transform .15s linear;
   -o-transition: -o-transform .15s linear;
   -webkit-transition: -webkit-transform .15s linear;
-  -o-transform: rotate(-6deg);
-  -webkit-transform: rotate(-6deg);
-  -moz-transform: rotate(-6deg);
+  background: #fcaf09;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  color: #000;
+  display: block;
+  height: 9em;
+  padding: 0.5em;
   position: relative;
-  background: #fcaf09; }
+  text-decoration: none;
+  transform: rotate(-6deg);
+  transition: transform .15s linear;
+  width: 9em; }
 
 ul.sticky-notes li:nth-child(even) a {
+  -moz-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
   -o-transform: rotate(4deg);
   -webkit-transform: rotate(4deg);
-  -moz-transform: rotate(4deg);
-  position: relative;
   background: #c6dd2a;
-  top: 5px; }
+  position: relative;
+  top: 5px;
+  transform: rotate(4deg); }
 
 ul.sticky-notes li:nth-child(3n) a {
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
   -o-transform: rotate(-3deg);
   -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  position: relative;
   background: #f8e70c;
-  top: -5px; }
+  position: relative;
+  top: -5px;
+  transform: rotate(-3deg); }
 
 ul.sticky-notes li:nth-child(5n) a {
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
   -o-transform: rotate(5deg);
   -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  position: relative;
   background: #55c7f0;
-  top: -10px; }
+  position: relative;
+  top: -10px;
+  transform: rotate(5deg); }
 
 ul.sticky-notes li:nth-child(7n) a {
   background: #b788be; }
 
-ul.sticky-notes li a:hover,
-ul.sticky-notes li a:focus {
-  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.7);
+ul.sticky-notes li a:focus,
+ul.sticky-notes li a:hover {
   -moz-box-shadow: 8px px 5px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.7);
-  -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
   -o-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.7);
   position: relative;
+  transform: scale(1.25);
   z-index: 5; }
 
 ul.sticky-notes li p {
   font-family: "Comic Sans MS", cursive, sans-serif;
-  font-weight: normal;
-  font-size: 125%; }
+  font-size: 125%;
+  font-weight: normal; }
