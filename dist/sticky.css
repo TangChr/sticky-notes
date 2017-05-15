@@ -92,7 +92,27 @@ ul.sticky-notes li a:hover {
   transform: scale(1.25);
   z-index: 5; }
 
-ul.sticky-notes li p {
+ul.sticky-notes li p,
+ul.sticky-notes li h2 {
   font-family: beanie-sans, "Comic Sans MS", cursive, sans-serif;
-  font-size: 125%;
+  font-size: 160%;
   font-weight: normal; }
+
+ul.sticky-notes li h2 {
+  text-decoration: underline; }
+
+ul.sticky-notes li h2.small {
+  font-size: 150%; }
+
+ul.sticky-notes li p.small {
+  font-size: 140%; }
+
+ul.sticky-notes li p.smaller {
+  font-size: 125%; }
+
+ul.sticky-notes li p.small-askew {
+  font-size: 80%;
+  margin-top: 10px;
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg); }
