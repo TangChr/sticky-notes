@@ -2,6 +2,7 @@ body {
     background: #666;
 }
 
-@import 'src/mixins',
+@import 'assets/beanie',
+        'src/mixins',
         'src/colors',
         'src/notes';
