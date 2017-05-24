@@ -5,7 +5,7 @@
   "author": "Christian Tang",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.3.2",
+    "gulp-clean-css": "^3.4.0",
     "gulp-header": "^1.8.8",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
