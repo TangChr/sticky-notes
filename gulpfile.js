@@ -14,7 +14,7 @@ var banner = ['/**',
   var header_opts = {pkg: pkg, year: new Date().getFullYear()};
  
 gulp.task('sass', function () {
-  return gulp.src('./master.scss')
+  return gulp.src('./sticky.scss')
     .pipe(sass({style: 'expanded'}))
     .pipe(sass().on('error', sass.logError))
     .pipe(rename('sticky.css'))
