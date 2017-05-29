@@ -1,8 +1,8 @@
-$color1: if($useClassic == true, $classic_color1, $new_color1);
-$color2: if($useClassic == true, $classic_color2, $new_color2);
-$color3: if($useClassic == true, $classic_color3, $new_color3);
-$color4: if($useClassic == true, $classic_color4, $new_color4);
-$color5: if($useClassic == true, $classic_color5, $new_color5);
+$color1: if(variable-exists(useClassic) and $useClassic == true, $classic_color1, $new_color1);
+$color2: if(variable-exists(useClassic) and $useClassic == true, $classic_color2, $new_color2);
+$color3: if(variable-exists(useClassic) and $useClassic == true, $classic_color3, $new_color3);
+$color4: if(variable-exists(useClassic) and $useClassic == true, $classic_color4, $new_color4);
+$color5: if(variable-exists(useClassic) and $useClassic == true, $classic_color5, $new_color5);
 * {
     font-size: 100%;
     margin: 0;
