@@ -1,10 +1,12 @@
-var gulp   = require('gulp'),
-    clean  = require('gulp-clean-css'),
-    header = require('gulp-header'),
-    rename = require('gulp-rename'),
-    sass   = require('gulp-sass'),
-    pkg = require('./package.json');
+var gulp     = require('gulp-param')(require('gulp'), process.argv),
+    clean    = require('gulp-clean-css'),
+    header   = require('gulp-header'),
+    rename   = require('gulp-rename'),
+    sass     = require('gulp-sass'),
+    sassVars = require('gulp-sass-variables'),
+    argv     = require('yargs').argv;
 
+var pkg = require('./package.json');
 var banner = ['/**',
   ' * <%= pkg.name %> v<%= pkg.version %>',
   ' * Copyright (c) <%= year  %> <%= pkg.author %>',
@@ -13,8 +15,11 @@ var banner = ['/**',
   ''].join('\n');
   var header_opts = {pkg: pkg, year: new Date().getFullYear()};
  
-gulp.task('sass', function () {
+gulp.task('build', function (classic) {
   return gulp.src('./sticky.scss')
+    .pipe(sassVars({
+               $useClassic: argv.classic
+             }))
     .pipe(sass({style: 'expanded'}))
     .pipe(sass().on('error', sass.logError))
     .pipe(rename('sticky.css'))
@@ -22,7 +27,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('clean', ['sass'], function () {
+gulp.task('clean', ['build'], function () {
   return gulp.src('./dist/sticky.css')
     .pipe(clean({compatibility: 'ie8'}))
     .pipe(header(banner, header_opts))
@@ -30,4 +35,4 @@ gulp.task('clean', ['sass'], function () {
     .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('default', ['sass', 'clean']);
+gulp.task('default', ['build', 'clean']);

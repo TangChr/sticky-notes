@@ -7,9 +7,34 @@ Stylesheet that uses CSS3-transitions and transformations to create "Sticky Note
 
 The stylesheet can be seen in action here: [seaweed.dk](http://seaweed.dk)
 
+## Compiling the stylesheet
+1. Install node.js.
+2. Install gulp `npm i -g gulp`
+3. Clone repository `git clone https://github.com/TangChr/sticky-notes`
+
+```
+npm i
+gulp build
+```
+Compile the stylesheet with "classic" colors
+```
+gulp build --classic
+```
+Minify the stylesheet
+```
+gulp clean
+```
+Compiling and minifying can be done with a single command
+```
+gulp
+gulp --classic
+```
+
+## Using the stylesheet
+
 ```html
 <head>
-    <link rel="stylesheet" href="css/sticky.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/sticky.css" type="text/css" media="screen" />
 </head>
 ```
 
