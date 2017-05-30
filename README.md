@@ -11,9 +11,9 @@ The stylesheet can be seen in action here: [seaweed.dk](http://seaweed.dk)
 1. Install node.js.
 2. Install gulp `npm i -g gulp`
 3. Clone repository `git clone https://github.com/TangChr/sticky-notes`
+4. Install dependencies `npm i`
 
 ```
-npm i
 gulp build
 ```
 Compile the stylesheet with "classic" colors
