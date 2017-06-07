@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "Christian Tang",
+  "repository": "git+https://github.com/TangChr/sticky-notes.git",
+  "homepage": "http://willitcompile.net/projects",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.4.0",
     "gulp-header": "^1.8.8",
     "gulp-param": "^1.0.3",
     "gulp-rename": "^1.2.2",
@@ -13,5 +14,8 @@
     "gulp-sass-variables": "^1.1.1",
     "yargs": "^8.0.1"
   },
-  "homepage": "http://willitcompile.net/projects"
+  "scripts": {
+    "build": "gulp build",
+    "build:classic": "gulp build --classic"
+  }
 }

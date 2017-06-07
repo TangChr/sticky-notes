@@ -8,8 +8,6 @@ branches:
   only:
   - master
 
-before_script:
-  - npm install -g gulp
 script:
-  - gulp
-  - gulp --classic
+  - npm run build
+  - npm run build:classic

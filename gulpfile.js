@@ -1,5 +1,4 @@
 var gulp     = require('gulp-param')(require('gulp'), process.argv),
-    clean    = require('gulp-clean-css'),
     header   = require('gulp-header'),
     rename   = require('gulp-rename'),
     sass     = require('gulp-sass'),
@@ -27,12 +26,4 @@ gulp.task('build', function (classic) {
     .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('clean', ['build'], function () {
-  return gulp.src('./dist/sticky.css')
-    .pipe(clean({compatibility: 'ie8'}))
-    .pipe(header(banner, header_opts))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./dist/'));
-});
-
-gulp.task('default', ['build', 'clean']);
+gulp.task('default', ['build']);
