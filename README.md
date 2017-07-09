@@ -15,10 +15,6 @@ The stylesheet can be seen in action here: [seaweed.dk](http://seaweed.dk)
 ```
 npm run build
 ```
-Compile the stylesheet with "classic" colors
-```
-npm run build:classic
-```
 
 ## Using the stylesheet
 
