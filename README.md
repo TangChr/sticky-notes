@@ -1,18 +1,19 @@
 # CSS3 Sticky Notes
 
-[![Build Status](https://img.shields.io/travis/TangChr/sticky-notes.svg)](https://travis-ci.org/TangChr/sticky-notes)
-[![License](https://img.shields.io/github/license/TangChr/sticky-notes.svg)](https://raw.githubusercontent.com/TangChr/sticky-notes/master/LICENSE)
+[![Build Status][travis_badge]][travis_url]
+[![Build Status][license_badge]][license_url]
 
 Stylesheet that uses CSS3-transitions and transformations to create "Sticky Notes" (Post-it notes).
 
 The stylesheet can be seen in action here: [seaweed.dk](http://seaweed.dk)
 
 ## Compiling the stylesheet
+
 1. Install node.js.
 2. Clone repository `git clone https://github.com/TangChr/sticky-notes`
 3. Install dependencies `npm i`
 
-```
+```shell
 npm run build
 ```
 
@@ -46,3 +47,8 @@ npm run build
     </li>
 </ul>
 ```
+
+[travis_badge]: https://img.shields.io/travis/TangChr/sticky-notes.svg
+[license_badge]: https://img.shields.io/github/license/TangChr/sticky-notes.svg
+[travis_url]: https://travis-ci.org/TangChr/sticky-notes
+[license_url]: https://raw.githubusercontent.com/TangChr/sticky-notes/master/LICENSE
