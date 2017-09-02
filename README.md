@@ -2,6 +2,7 @@
 
 [![Build Status][travis_badge]][travis_url]
 [![Build Status][license_badge]][license_url]
+[![website][website_badge]](http://seaweed.dk)
 
 Stylesheet that uses CSS3-transitions and transformations to create "Sticky Notes" (Post-it notes).
 
@@ -50,5 +51,6 @@ npm run build
 
 [travis_badge]: https://img.shields.io/travis/TangChr/sticky-notes.svg
 [license_badge]: https://img.shields.io/github/license/TangChr/sticky-notes.svg
+[website_badge]: https://img.shields.io/badge/website-seaweed.dk-yellow.svg
 [travis_url]: https://travis-ci.org/TangChr/sticky-notes
 [license_url]: https://raw.githubusercontent.com/TangChr/sticky-notes/master/LICENSE
