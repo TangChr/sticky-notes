@@ -11,8 +11,9 @@ The stylesheet can be seen in action here: [seaweed.dk](http://seaweed.dk)
 ## Compiling the stylesheet
 
 1. Install node.js.
-2. Clone repository `git clone https://github.com/TangChr/sticky-notes`
-3. Install dependencies `npm i`
+2. Install [Yarn](https://yarnpkg.com) `npm i -g yarn`
+3. Clone repository `git clone https://github.com/TangChr/sticky-notes`
+4. Install dependencies `yarn install`
 
 ```shell
 npm run build
