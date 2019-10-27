@@ -4,7 +4,7 @@
   "license": "MIT",
   "author": "Christian Tang",
   "repository": "git+https://github.com/TangChr/sticky-notes.git",
-  "homepage": "http://willitcompile.net/projects",
+  "homepage": "https://seaweed.dk",
   "devDependencies": {
     "node-sass": "^4.13.0"
   },
