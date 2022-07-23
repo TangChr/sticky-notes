@@ -9,6 +9,7 @@
     "node-sass": "^7.0.0"
   },
   "scripts": {
-    "build": "node-sass -o dist sticky.scss"
+    "build": "node-sass -o dist sticky.scss",
+    "build-classic": "node-sass -o dist sticky-classic.scss"
   }
 }
